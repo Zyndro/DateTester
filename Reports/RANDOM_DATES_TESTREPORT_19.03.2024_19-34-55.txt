@@ -1,0 +1,42 @@
+test_DD_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_D_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_HH_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_H_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_MM_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_MONTH_Custom (Tests.Dates_Custom.DateTesterCustom) ... FAIL
+test_MON_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_YYYY_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_YY_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_m_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_mm_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_s_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_ss_Custom (Tests.Dates_Custom.DateTesterCustom) ... ok
+test_ISO (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_MM_DD_YYYY (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_MM_DD_YYYY_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_MONTH_DATE_YEAR_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_YEAR_DATE_MONTH_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... FAIL
+test_YEAR_MONTH_DATE_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_YYYY_DD_MM_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+test_YYYY_MM_DD_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
+
+======================================================================
+FAIL: test_MONTH_Custom (Tests.Dates_Custom.DateTesterCustom)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sindromo\PycharmProjects\Date\Tests\Dates_Custom.py", line 63, in test_MONTH_Custom
+    assert date.strip(' \n\t') in self.Months_Long, f"Invalid output '{date}'"
+AssertionError: Invalid output 'Dece43ber'
+
+======================================================================
+FAIL: test_YEAR_DATE_MONTH_TIME (Tests.Dates_Predefined.DateTesterPredefined)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Sindromo\PycharmProjects\Date\Tests\Dates_Predefined.py", line 64, in test_YEAR_DATE_MONTH_TIME
+    assert isinstance(MMDDYYYTIMEdate, re.Match), f"Invalid output '{date}'"
+AssertionError: Invalid output '2071 May 22 21:03:05'
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.269s
+
+FAILED (failures=2)
