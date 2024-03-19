@@ -1,7 +1,7 @@
 # DateTester
 
 Testing of a https://codebeautify.org/generate-random-date date generator.
-Test "database" contains a 1000 randomly generated dates for available each presets, and some basic tests for custom format
+Test "database" in /Dates folder contains a 1000 randomly generated dates for each available preset, and some basic tests for custom format
 
 Since this generator has no api available(and the generation is done locally in browser) im not going to bother with generating the data "live" and scraping it with the test scripts.
 
