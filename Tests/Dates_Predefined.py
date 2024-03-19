@@ -3,7 +3,7 @@ import re
 import unittest
 import dateutil.parser
 
-
+__unittest = True
 class DateTesterPredefined(unittest.TestCase):
 
     @classmethod

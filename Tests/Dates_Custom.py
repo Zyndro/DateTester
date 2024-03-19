@@ -2,7 +2,7 @@ import os
 import re
 import unittest
 
-
+__unittest = True
 class DateTesterCustom(unittest.TestCase):
 
     @classmethod

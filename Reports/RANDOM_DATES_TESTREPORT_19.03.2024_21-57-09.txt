@@ -23,20 +23,14 @@ test_YYYY_MM_DD_TIME (Tests.Dates_Predefined.DateTesterPredefined) ... ok
 ======================================================================
 FAIL: test_MONTH_Custom (Tests.Dates_Custom.DateTesterCustom)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Users\Sindromo\PycharmProjects\Date\Tests\Dates_Custom.py", line 63, in test_MONTH_Custom
-    assert date.strip(' \n\t') in self.Months_Long, f"Invalid output '{date}'"
 AssertionError: Invalid output 'Dece43ber'
 
 ======================================================================
 FAIL: test_YEAR_DATE_MONTH_TIME (Tests.Dates_Predefined.DateTesterPredefined)
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "C:\Users\Sindromo\PycharmProjects\Date\Tests\Dates_Predefined.py", line 64, in test_YEAR_DATE_MONTH_TIME
-    assert isinstance(MMDDYYYTIMEdate, re.Match), f"Invalid output '{date}'"
 AssertionError: Invalid output '2071 May 22 21:03:05'
 
 ----------------------------------------------------------------------
-Ran 21 tests in 0.269s
+Ran 21 tests in 0.258s
 
 FAILED (failures=2)
